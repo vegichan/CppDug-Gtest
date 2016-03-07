@@ -14,6 +14,13 @@ Install the package on mac os x or linux:
   make; 
 ```
 
+Make the gtest library available:
+```
+sudo cp -r ../include/gtest /usr/local/include/
+
+sudo cp lib*.a /usr/local/lib
+```
+
 # Executing this project #
 
 This project is intended to be used on the CppDug Meetup. Personal explanation is required. The CMake file for this 
