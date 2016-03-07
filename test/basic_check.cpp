@@ -1,6 +1,6 @@
 #include "gtest/gtest.h"
 #include "../src/GoogleTestDemo.h"
-#include"../src/FizzBuzz.h"
+#include "../src/FizzBuzz.h"
 
 /* GTEST TESTS
  * execute using gtest*
