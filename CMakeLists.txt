@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.1)
 
-include_directories(/Users/martinkysel/work/googletest/googletest/include)
+enable_testing()
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
@@ -13,5 +15,4 @@ endif (APPLE)
 
 add_executable(runBasicTests ${SOURCE_FILES})
 
-target_link_libraries(runBasicTests /Users/martinkysel/work/googletest/googletest/build/libgtest.a
-        /Users/martinkysel/work/googletest/googletest/build/libgtest_main.a)
+target_link_libraries(runBasicTests ${GTEST_LIBRARIES} ${GTEST_MAIN_LIBRARIES})
